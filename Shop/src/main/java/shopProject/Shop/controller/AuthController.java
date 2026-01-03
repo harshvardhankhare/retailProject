@@ -2,6 +2,7 @@ package shopProject.Shop.controller;
 
 import java.util.Map;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -18,8 +19,9 @@ import shopProject.Shop.io.AuthRequest;
 import shopProject.Shop.io.AuthResponse;
 import shopProject.Shop.service.AppUserServiceDetails;
 import shopProject.Shop.service.UserService;
-import util.JwtUtil;
+import shopProject.Shop.util.JwtUtil;
 @RestController
+@RequiredArgsConstructor
 public class AuthController {
 
 	private final PasswordEncoder passwordEncoder;
