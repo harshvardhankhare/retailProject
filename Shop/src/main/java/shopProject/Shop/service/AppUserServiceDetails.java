@@ -12,7 +12,7 @@ import shopProject.Shop.repository.UserRepository;
 
 @Service
 public class AppUserServiceDetails implements UserDetailsService {
-
+d
     private final UserRepository userRepository;
 
     @Autowired
